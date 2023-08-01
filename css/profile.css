@@ -1,0 +1,68 @@
+.profile-img{
+    width: 60%;
+    max-width: 300px;
+    border-radius: 35%;
+}
+/* Código para generar una linea bajo la foto */
+/* .profile-img-section{
+    position: relative;
+}
+.profile-img-line{
+    background-color: cornflowerblue;
+    height: 10px;
+    position:absolute;
+    width:100%;
+    left: 0;
+    bottom: 0;
+} */
+.profile{
+    text-align: center;
+    padding: 20px 0;
+    border: 2px solid rgb(8, 57, 148);
+    border-radius: 25px;
+    padding: 20px;
+}
+.profile-title{
+    font-size: 35px;
+    font-weight: bold;
+    margin:0;/*Se resetea el margen, que viene por defecto.*/
+    color: rgb(8, 57, 148);
+}
+.profile-details{
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 450px;
+    margin: 25px auto;
+}
+
+/* --------------------------------------------------------------*/
+/* perfil para pantalla escritorio */
+
+@media(min-width:700px){
+  
+    .profile-img{
+        width:280px;
+        height:300px;
+        width: 100%;
+        /* max-width: 350px; */
+        border-radius: 35%;
+    }
+    .profile{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    .profile-title{
+        font-size: 60px;
+        
+    }
+    .profile-details{
+        font-size: 25px;
+        font-weight: 500;
+        max-width: 450px;
+        margin: 30px 0;
+    }
+
+}

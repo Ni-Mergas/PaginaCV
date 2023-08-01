@@ -1,0 +1,36 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    padding-top: 70px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;/*Permite suavizar el scroll al selecionarlo del menú de navegación*/
+}
+section[id]{
+    scroll-margin-top: 90px;/*cuando se use el menu de navegación esta línea permite posicionar la ventana en la posición correcta*/
+}
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right:25px;
+
+}
+.vertical-padding{
+    padding-top:25px;
+    padding-bottom:25px;
+
+}
+@media(min-width:700px){
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right:70px;
+    
+    }
+    .vertical-padding{
+        padding-top:70px;
+        padding-bottom:70px;
+    }
+}

@@ -1,0 +1,70 @@
+.topHeader{
+    box-shadow: 0 3px 5px rgb(100, 97, 97);/* sombreado barra de navegación, 0 eje x 4px eje y, difuminado de 5px y color*/
+    position: fixed;/*fija el menu de navegación por toda la página*/
+    top: 0;/*pega el menu en la parte superior*/
+    left: 0;/*pega el menu a la izquierda*/
+    width: 100%;
+    background-color:whitesmoke;
+    
+}
+
+.topnav{
+    display: flex;
+    padding: 10px;
+    max-width: 980px;/* ancho maximo*/
+    margin:0 auto;
+    justify-content: space-between;
+}
+.imagen{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500px;
+    gap: 1rem;
+    
+}
+.imagen img{
+    border-radius: 60%;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;/*Reseteando margen del li*/
+    padding: 0;/*Reseteando padding li*/
+}
+.menu li{
+    padding: 0 15px;
+}
+
+.menu a{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;/*Centrar elementos de lista */
+    text-transform: uppercase;
+    position: relative;
+}
+/*Codigo para implementar la barra de color inferior en li*/
+.menu a::after{
+    content: "";
+    background-color: rgb(8, 57, 148);
+    position: absolute;
+    left: 0;
+    top:100%;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu a.selected::after,
+.menu a:hover::after{
+    opacity: 1;
+}
+.menu a:hover{
+    color: rgb(8, 57, 148);
+    transition: 0.3s;
+}
+.open-menu,
+.close-menu{
+    display: none;
+}
+

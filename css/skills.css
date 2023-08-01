@@ -1,0 +1,40 @@
+.skills{
+    max-width: 1020px;
+    margin: 0 auto;/*Se centra, debido a que al dar un ancho fijo, el margen se corre a la izquierda*/
+    border: 2px solid rgb(8, 57, 148);
+    border-radius: 25px;
+    height: 500px;
+}
+.skills-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(8, 57, 148);
+}
+
+.skills-list{
+    list-style: none;
+    padding: 0;/*Se recetea los margenes, por que por defecto trae para la decoración de la lista*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills-skill{
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgb(81, 137, 240, 0.25 );
+    border-radius: 42px;
+    padding: 0.5em 0.7em;/*Padding con em, otorga flexibilidad al area que encierra la skill, al cambiar el tamaño de la fuente, el padding crece automaticamente*/
+    margin: 10px;
+}
+@media(min-width:700px){
+    .skills-title{
+        font-size: 50px;
+
+    }
+    .skills-skill{
+        font-size: 30px;
+        margin: 20px;
+    }
+}
